@@ -23,7 +23,11 @@
     <header class="header">
       <div class="container header-container">
         <nav class="nav-pannel">
-          <a href="/index.html" class="logo">Web<span>Studio</span></a>
+          <div class="header-logo">
+            <a href="/index.html" class="logo"
+              >Web<span class="studio">Studio</span></a
+            >
+          </div>
           <ul class="links-list">
             <li><a href="./index.html" class="link navlink">Studio</a></li>
             <li><a href="" class="link">Portfolio</a></li>
@@ -44,6 +48,75 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-btn"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close-btn">
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-icon"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li>
+                <a href="./index.html" class="mobile-menu-link email-link"
+                  >Studio</a
+                >
+              </li>
+              <li><a href="" class="mobile-menu-link">Portfolio</a></li>
+              <li><a href="" class="mobile-menu-link">Contacts</a></li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="mobile-menu-address-items">
+              <li>
+                <a href="tel:+110001111111" class="mobile-phone"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="mobile-email"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="social-links">
+              <li class="social-li">
+                <a href="" class="icon-link">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-Instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-li">
+                <a href="" class="icon-link">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-Twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-li">
+                <a href="" class="icon-link">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-Facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-li">
+                <a href="" class="icon-link">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-Linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
     <main>
@@ -55,7 +128,7 @@
           <button type="button" class="button">Order Service</button>
         </div>
       </section>
-      <section class="principles-section">
+      <section class="principles-section hidden">
         <div class="container">
           <h2 class="visually-hidden">Our Principles</h2>
           <ul class="princ-list">
@@ -110,7 +183,7 @@
           </ul>
         </div>
       </section>
-      <section class="team-card">
+      <section class="team-card hidden">
         <div class="container">
           <h2 class="our-team">Our Team</h2>
           <ul class="team-list">
@@ -267,7 +340,7 @@
           </ul>
         </div>
       </section>
-      <section class="portfolio-section">
+      <section class="portfolio-section hidden">
         <div class="container">
           <h2 class="portfolio-header">Our Portfolio</h2>
           <ul class="portfolio-tab">
@@ -388,7 +461,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container footer-container">
         <div class="container-logo">
           <a href="./index.html" class="footer-logo"
@@ -453,7 +526,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay is-open hidden">
       <div class="modal">
         <button class="close-btn" type="button">
           <svg class="close-icon" width="8" height="8">
