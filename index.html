@@ -48,15 +48,15 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger-btn"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close-btn">
+          <button class="mobile-menu-close-btn" data-menu-close>
             <svg class="mobile-menu-close-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close-icon"></use>
             </svg>
@@ -125,57 +125,59 @@
           <h1 class="header-solutions">
             Effective Solutions for Your Business
           </h1>
-          <button type="button" class="button">Order Service</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
-      <section class="principles-section hidden">
+      <section class="principles-section">
         <div class="container">
           <h2 class="visually-hidden">Our Principles</h2>
           <ul class="princ-list">
             <li class="princ-li">
               <div class="feature">
-                <svg class="icon" width="64" height="64">
+                <svg class="feature-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
               <h3 class="header-principles">Strategy</h3>
-              <p class="small-text">
+              <p class="feature-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
             <li class="princ-li">
               <div class="feature">
-                <svg class="icon" width="64" height="64">
+                <svg class="feature-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
               <h3 class="header-principles">Punctuality</h3>
-              <p class="small-text">
+              <p class="feature-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
             <li class="princ-li">
               <div class="feature">
-                <svg class="icon" width="64" height="64">
+                <svg class="feature-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
               <h3 class="header-principles">Diligence</h3>
-              <p class="small-text">
+              <p class="feature-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
             <li class="princ-li">
               <div class="feature">
-                <svg class="icon" width="64" height="64">
+                <svg class="feature-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
               <h3 class="header-principles">Technologies</h3>
-              <p class="small-text">
+              <p class="feature-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -526,9 +528,9 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay is-open hidden">
+    <div class="modal-overlay" data-modal>
       <div class="modal">
-        <button class="close-btn" type="button">
+        <button class="close-btn" type="button" data-modal-close>
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-icon"></use>
           </svg>
@@ -603,4 +605,6 @@
       </div>
     </div>
   </body>
+  <script src="js/menu.js"></script>
+  <script src="js/modal.js"></script>
 </html>
