@@ -649,7 +649,9 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-span {
 }
 }
 /*------------PRINCIPLES-----------*/
-
+.principles-section{
+    padding-bottom: 96px;
+}
 .feature{
     display: none;
 }
@@ -718,9 +720,11 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-span {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    margin: 120px auto;
 }
 .princ-li{
     width: calc((100% - 72px)/4);
+    margin-bottom: 0;
 }
 .header-principles{
     font-weight: 500;
@@ -730,4 +734,103 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-span {
     font-weight: 400;
     font-size: 16px;
 }
+.principles-section{
+    padding-bottom: 0;
+}
+}
+
+/*--------------TEAM SECTION-----------*/
+
+.our-team{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 72px;
+    text-align: center;
+}
+.team-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;        
+    gap: 32px;
+    font-weight: 500;
+}
+.team-card {
+    background-color: #f4f4fd;
+    padding-top: 96px;
+}
+.card-info {
+    text-align: center;
+    padding: 32px 0;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+}
+.small-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    margin-bottom: 8px;
+}
+.social-links {
+    display:flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    gap: 24px;
+}
+.social-li {
+    width: 40px;
+    height: 40px;
+}
+.icon-link {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.social-icon-team {
+    fill: #f4f4fd;
+}
+.social-icon {
+    fill: #fff;
+}
+
+.li-team{
+    background-color: #ffffff;
+    width: 264px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+}
+.team-name{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 64px 24px;
+    }
+}
+@media screen and (min-width: 1158px){
+    .team-list{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    }
 }
