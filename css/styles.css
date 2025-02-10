@@ -735,7 +735,6 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-span {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    padding: 120px 0;
 }
 .princ-li{
     width: calc((100% - 72px)/4);
@@ -793,9 +792,11 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-span {
     color: #434455;
     margin-bottom: 8px;
 }
-.social-links {
+.social-links-team {
     display:flex;
-    gap: 40px;
+    justify-content: space-evenly;
+    justify-content: center;
+    gap: 24px;
 }
 .social-li {
     width: 40px;
