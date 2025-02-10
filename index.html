@@ -23,11 +23,10 @@
     <header class="header">
       <div class="container header-container">
         <nav class="nav-pannel">
-          <div class="header-logo">
-            <a href="/index.html" class="logo"
-              >Web<span class="studio">Studio</span></a
-            >
-          </div>
+          <a href="/index.html" class="logo"
+            >Web<span class="studio">Studio</span></a
+          >
+
           <ul class="links-list">
             <li><a href="./index.html" class="link navlink">Studio</a></li>
             <li><a href="" class="link">Portfolio</a></li>
@@ -72,7 +71,7 @@
               <li><a href="" class="mobile-menu-link">Contacts</a></li>
             </ul>
           </nav>
-          <address>
+          <address class="mobile-address">
             <ul class="mobile-menu-address-items">
               <li>
                 <a href="tel:+110001111111" class="mobile-phone"
@@ -85,37 +84,37 @@
                 >
               </li>
             </ul>
-            <ul class="social-links">
-              <li class="social-li">
-                <a href="" class="icon-link">
-                  <svg class="icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-Instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-li">
-                <a href="" class="icon-link">
-                  <svg class="icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-Twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-li">
-                <a href="" class="icon-link">
-                  <svg class="icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-Facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-li">
-                <a href="" class="icon-link">
-                  <svg class="icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-Linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
           </address>
+          <ul class="social-links">
+            <li class="social-li">
+              <a href="" class="icon-link">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-Instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-li">
+              <a href="" class="icon-link">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-Twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-li">
+              <a href="" class="icon-link">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-Facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-li">
+              <a href="" class="icon-link">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-Linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -398,7 +397,7 @@
                       ./images/portfolio/mob-banking-1-min.jpg    1x,
                       ./images/portfolio/mob-banking-1@2x-min.jpg 2x
                     " />
-                  <image
+                  <img
                     src="./images/portfolio/pc-banking1-min.jpg"
                     alt="Banking App"
                     width="360"
@@ -435,7 +434,7 @@
                       ./images/portfolio/mob-payment-2-min.jpg    1x,
                       ./images/portfolio/mob-payment-2@2x-min.jpg 2x
                     " />
-                  <image
+                  <img
                     src="./images/portfolio/pc-payment2-min.jpg"
                     alt="Banking App"
                     width="360"
@@ -472,7 +471,7 @@
                       ./images/portfolio/mob-meditation-3-min.jpg    1x,
                       ./images/portfolio/mob-meditation-3@2x-min.jpg 2x
                     " />
-                  <image
+                  <img
                     src="./images/portfolio/pc-meditation3-min.jpg"
                     alt="Banking App"
                     width="360"
@@ -509,7 +508,7 @@
                       ./images/portfolio/mob-taxi-4-min.jpg    1x,
                       ./images/portfolio/mob-taxi-4@2x-min.jpg 2x
                     " />
-                  <image
+                  <img
                     src="./images/portfolio/pc-taxi4-min.jpg"
                     alt="Banking App"
                     width="360"
@@ -546,7 +545,7 @@
                       ./images/portfolio/mob-screen-5-min.jpg    1x,
                       ./images/portfolio/mob-screen-5@2x-min.jpg 2x
                     " />
-                  <image
+                  <img
                     src="./images/portfolio/pc-screen5-min.jpg"
                     alt="Banking App"
                     width="360"
@@ -583,7 +582,7 @@
                       ./images/portfolio/mob-courses-6-min.jpg    1x,
                       ./images/portfolio/mob-courses-6@2x-min.jpg 2x
                     " />
-                  <image
+                  <img
                     src="./images/portfolio/pc-courses6-min.jpg"
                     alt="Banking App"
                     width="360"
@@ -736,8 +735,10 @@
                   <use href="./images/icons.svg#icon-checkmark"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="pp-link"> Privacy Policy</a></label
+              <span
+                >I accept the terms and conditions of the
+                <a href="" class="pp-link"> Privacy Policy</a></span
+              ></label
             >
           </div>
           <button class="form-btn" type="submit">Send</button>
