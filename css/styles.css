@@ -836,7 +836,7 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-span {
 }
 /*-------------PORTFOLIO---------*/
 .portfolio-section{
-    margin-bottom: 96px;
+    margin-bottom: 120px;
 }
 .portfolio-card {
     width: 100%;
@@ -1086,10 +1086,11 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-span {
 @media screen and (min-width: 768px) {
    .footer-container{
     flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: row;
-        gap: 72px;
+    align-items: flex-start;
+    flex-direction: row;
+    row-gap: 24px;
+    column-gap: 24px;
+    padding-left: 108px;
    }
     .container-logo {
         margin-bottom: 0;
@@ -1119,7 +1120,9 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-span {
         align-items: flex-start;
         
     }
-
+    .subscribe-input{
+        width: 264px;
+    }
     .subscribe-form {
         flex-direction: row;
         align-items: start;
